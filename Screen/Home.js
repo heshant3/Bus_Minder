@@ -1,5 +1,5 @@
-import { View, Text, SafeAreaView } from "react-native";
-import { ScaledSheet } from "react-native-size-matters";
+import { View, Text, SafeAreaView, StyleSheet } from "react-native";
+
 import React from "react";
 import {
   useFonts,
@@ -90,7 +90,7 @@ export default function Home() {
      Head viewport
     */}
       <View style={styles.view1}>
-        <Text style={styles.head}> Select your route</Text>
+        <Text style={styles.head}> Seat availability</Text>
       </View>
       {/* 
      Bottom viewport
@@ -126,7 +126,7 @@ export default function Home() {
   );
 }
 
-const styles = ScaledSheet.create({
+const styles = StyleSheet.create({
   container: {
     backgroundColor: "#E8EEF1",
     flex: 1,
@@ -142,8 +142,8 @@ const styles = ScaledSheet.create({
   },
 
   head: {
-    marginTop: "50@s",
-    fontSize: "25@s",
+    marginTop: 50,
+    fontSize: 29,
     color: "#252525",
     alignSelf: "flex-start",
     fontFamily: "Poppins_500Medium",
@@ -168,9 +168,9 @@ const styles = ScaledSheet.create({
   RouteBox: {
     backgroundColor: "#3F86FA",
     width: "100%",
-    height: "70@s",
-    borderTopRightRadius: "10@s",
-    borderBottomRightRadius: "10@s",
+    height: 70,
+    borderTopRightRadius: 10,
+    borderBottomRightRadius: 10,
 
     justifyContent: "center",
   },
@@ -179,54 +179,54 @@ const styles = ScaledSheet.create({
     flex: 1,
     flexDirection: "column",
     justifyContent: "center",
-    alignContent: "center",
+    alignItems: "center",
   },
 
   BookInfoText: {
-    marginLeft: "20@s",
+    marginLeft: 20,
     color: "black",
     fontFamily: "Poppins_300Light",
-    fontSize: "18@s",
+    fontSize: 18,
   },
 
   ReservedView: {
-    marginVertical: "3@s",
+    marginVertical: 3,
     flexDirection: "row",
     alignItems: "center",
   },
 
   ReservedBox: {
-    marginLeft: "10@s",
+    marginLeft: 10,
     backgroundColor: "#ABCBFF",
-    width: "15@s",
-    height: "15@s",
-    borderRadius: "2@s",
+    width: 15,
+    height: 15,
+    borderRadius: 2,
   },
 
   AvailableBox: {
-    marginLeft: "10@s",
+    marginLeft: 10,
     backgroundColor: "#FFFFFF",
-    width: "15@s",
-    height: "15@s",
-    borderRadius: "2@s",
+    width: 15,
+    height: 15,
+    borderRadius: 2,
   },
 
   RouteNumText: {
-    marginLeft: "20@s",
+    marginLeft: 20,
     alignSelf: "flex-start",
     color: "#FFFFFF",
     fontFamily: "Poppins_500Medium",
-    fontSize: "30@s",
-    marginVertical: "-5@s",
+    fontSize: 30,
+    marginVertical: -5,
   },
 
   RouteText: {
-    marginLeft: "20@s",
+    marginLeft: 20,
     alignSelf: "flex-start",
     color: "#FFFFFF",
     fontFamily: "Poppins_300Light",
-    fontSize: "16@s",
-    marginVertical: "-5@s",
+    fontSize: 16,
+    marginVertical: -5,
   },
 
   LeftBusViewPort: {
@@ -237,11 +237,11 @@ const styles = ScaledSheet.create({
 
   Seat: {
     justifyContent: "center",
-    margin: "10@s",
-    width: "35@s",
-    height: "35@s",
+    margin: 10,
+    width: 40,
+    height: 40,
     backgroundColor: "#FFFFFF",
-    borderRadius: "5@s",
+    borderRadius: 5,
   },
 
   RightBusViewPort: {
@@ -254,7 +254,7 @@ const styles = ScaledSheet.create({
     alignItems: "center",
     alignSelf: "center",
     fontFamily: "Poppins_400Regular",
-    fontSize: "16@s",
+    fontSize: 16,
     color: "#000000",
   },
 });
