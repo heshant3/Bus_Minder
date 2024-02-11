@@ -1,6 +1,7 @@
 import { View, Text, SafeAreaView, StyleSheet, ScrollView } from "react-native";
 import React from "react";
 import { Ionicons, Entypo } from "@expo/vector-icons";
+
 import {
   useFonts,
   Poppins_400Regular,

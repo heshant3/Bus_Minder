@@ -1,6 +1,7 @@
 import { View, Text, SafeAreaView, StyleSheet } from "react-native";
 import React from "react";
 import { Ionicons } from "@expo/vector-icons";
+import MapView from "react-native-maps";
 import {
   useFonts,
   Poppins_400Regular,
